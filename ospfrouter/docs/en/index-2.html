@@ -1,0 +1,78 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+ <META NAME="GENERATOR" CONTENT="AAJ">
+ <TITLE>The Ospfrouter Handbook: Installation</TITLE>
+ <LINK HREF="index-3.html" REL=next>
+ <LINK HREF="index-1.html" REL=previous>
+ <LINK HREF="index.html#toc2" REL=contents>
+</HEAD>
+<BODY>
+<A HREF="index-3.html">Next</A>
+<A HREF="index-1.html">Previous</A>
+<A HREF="index.html#toc2">Contents</A>
+<HR>
+<H2><A NAME="s2">2. Installation</A></H2>
+
+<H2><A NAME="ss2.1">2.1 How to obtain Ospfrouter </A>
+</H2>
+<P>OSPF Router can be found either on the OSPF Router Applications page at
+<A HREF="http://how.to/ospfrouter">http://how.to/ospfrouter</A> or&nbsp; is also available on CD contained in the Project Report.
+OSPF Router is distributed as a tar file "ospfrouter-0.8.tar.gz" . copy the distribution file "ospfrouter-0.8.tar.gz" in the directory to which
+you want to install.A good way to report problems is to send the output you get
+by starting OSPF Router from the console.
+<H2><A NAME="ss2.2">2.2 Requirements</A>
+</H2>
+<P>
+In order to successfully compile and use OSPF Router, you need
+the following programs and libraries which are available on most
+platforms as distribution packages and thereby can be installed
+easily.
+<P><B>Required:</B>
+<UL>
+<LI>gcc version 2.96 (or compatible), available at
+<A HREF="http://www.gnu.org">http://www.gnu.org</A></LI>
+<LI>glibc-2.0 library
+<A HREF="http://www.gnu.org">http://www.gnu.org</A></LI>
+<LI>GNU make (or compatible), available at
+<A HREF="http://www.gnu.org">http://www.gnu.org</A></LI>
+<LI>autoconf 2.13 &amp; automake 1.4, available at
+<A HREF="http://www.gnu.org">http://www.gnu.org</A></LI>
+</UL>
+<P><B>Operating System: </B>Linux 2.4.x kernel.
+<P>OSPF Router was tested with PCQ Linux 7.1(based on Red Hat Linux 7.1). As far as known to the authors, PCQ Linux and Red Hat Linux contain all
+necessary packages, including enscript as packages or
+rpm's, so you should have no problem installing the required third-party software.
+Download the OSPF Router package and copy the source file as
+<CODE>root</CODE> into your directory and untar it with
+<BLOCKQUOTE><CODE>
+<PRE># tar zxvf ospfrouter-0.8.tar.gz</PRE></CODE></BLOCKQUOTE>
+<H2><A NAME="ss2.3">2.3 Compilation and installation</A>
+</H2>
+
+<P>In order to compile and install Ospfrouter on your system, type the following in
+the base directory of the Ospfrouter distribution:
+<BLOCKQUOTE><CODE>
+<PRE># cd ospfrouter-0.8</PRE></CODE></BLOCKQUOTE>
+<P>The First step is to configure the OSPF Router for using it correctly.
+To configure change the directory to ospfrouter as follows
+<BLOCKQUOTE><CODE><PRE># cd ospfrouter</PRE></CODE></BLOCKQUOTE>
+<P>Change the configuration parameters in the file "conf.h" as required by your
+underlying network.
+<P>Get back to the base directory of OSPF Router distribution. and install the
+OSPF Router by giving following commands.
+<BLOCKQUOTE><CODE>
+<PRE># ./configure
+# make
+# make install</PRE>
+</CODE></BLOCKQUOTE>
+<P>Since Ospfrouter uses autoconf you should have not trouble
+compiling it.
+Should you run into problems please report them to the the author at 
+<A HREF="mailto:ospfrouter@how.to">Ashish Puri, Anurag Damani, Jignesh Patel</A>
+<HR>
+<A HREF="index-3.html">Next</A>
+<A HREF="index-1.html">Previous</A>
+<A HREF="index.html#toc2">Contents</A>
+</BODY>
+</HTML>

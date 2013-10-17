@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+ <META NAME="GENERATOR" CONTENT="AAJ">
+ <TITLE>The Ospfrouter Handbook: Another Section</TITLE>
+ <LINK HREF="index-5.html" REL=next>
+ <LINK HREF="index-3.html" REL=previous>
+ <LINK HREF="index.html#toc4" REL=contents>
+</HEAD>
+<BODY>
+<A HREF="index-5.html">Next</A>
+<A HREF="index-3.html">Previous</A>
+<A HREF="index.html#toc4">Contents</A>
+<HR>
+<H2><A NAME="s5">4. Questions and Answers</A></H2>
+<p><b>Q. </b> What is OSPF?</p>
+<p><b>A.</b> OSPF (Open Shortest Path First) is the next generation Internet routing
+protocol. The &quot;Open&quot; in its name refers to the fact that OSPF was
+developed in the public domain as an open specification. The &quot;Shortest Path
+First&quot; refers to an algorithm developed by Dijkstra in 1978 for building a
+self-rooted shortest-path tree from which routing tables can be derived.</p>
+<p><b>Q.</b> Is &quot;OSPF Router&quot; a s/w or h/w router?</p>
+<p><b>A.</b> s/w</p>
+<p><b>Q.</b> How to make &quot;OSPF Router&quot; a daemon process?</p>
+<p><b>A.</b> Well... you don't need to make it as a daemon since <u>it is
+already a daemon </u>!. You just have to enable it by editing the &quot;main.c&quot;
+file in the directory <i>ospfrouter</i>, uncomment the line containing daemonize()
+in the main() function, save the file and recompile the software as described in
+section 2.3 above.</p>
+<P><b>Q. </b>How to configure &quot;OSPF Router&quot;?<P><b>A.</b> <font FACE="Times New Roman" SIZE="3">Change
+the configuration parameters in the file &quot;conf.h&quot; as required by your
+underlying network and recompile the software.</font>
+<P><font face="Times New Roman" size="3"><b>Q.</b> I am getting socket error.
+what should I do?</font><P><font face="Times New Roman" size="3"><b>A.</b> see
+whether you have superuser privilege or not, you must have superuser privilege
+to create RAW sockets</font>
+<p>
+if you have more queries then mail your queries at ospfrouter@how.to
+<HR>
+<A HREF="index-5.html">Next</A>
+<A HREF="index-3.html">Previous</A>
+<A HREF="index.html#toc4">Contents</A>
+</BODY>
+</HTML>
